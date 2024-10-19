@@ -1,10 +1,10 @@
-import { $system_services_createElement } from "./system/system_services.js";
-import { $system_services_createPage } from "./system/system_services.js";
-import { $system_services_createUserTemplate } from "./system/system_services.js";
-import { $system_services_createIconButton } from "./system/system_services.js";
-import { makeDraggable } from "./system/system_windowManager.js";
-import { removeWindow } from "./system/system_windowManager.js";
-import { $systemLockScreen } from "./system/system_lockscreen.js";
+import { $system_services_createElement } from "../system/system_services.js";
+import { $system_services_createPage } from "../system/system_services.js";
+import { $system_services_createUserTemplate } from "../system/system_services.js";
+import { $system_services_createIconButton } from "../system/system_services.js";
+import { makeDraggable } from "../system/system_windowManager.js";
+import { removeWindow } from "../system/system_windowManager.js";
+import { $systemLockScreen } from "../system/system_lockscreen.js";
 
 const newDataAttribute = (htmlTag, dataAttr, dataAttrVal, className, appendTo) => {
     const newElement = document.createElement(htmlTag);
