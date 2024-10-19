@@ -4,7 +4,7 @@ import { $system_services_createUserTemplate } from "./system/system_services.js
 import { $system_services_createIconButton } from "./system/system_services.js";
 import { makeDraggable } from "./system/system_windowManager.js";
 import { removeWindow } from "./system/system_windowManager.js";
-import { $systemLockScreen } from "./system/system_lockscreen.js";
+import { $systemLockScreen } from "./system/system_lockScreen.js";
 
 const fileSystem = {
     Root: {
