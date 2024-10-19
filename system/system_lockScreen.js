@@ -1,6 +1,15 @@
 import { $system_services_createElement } from "./system_services.js";
 
-// Reusable function for lock screen or confirmation prompts
+if (!localStorage.getItem('STORE_SYSTEM_PASSWORD')) {
+    localStorage.setItem('STORE_SYSTEM_PASSWORD', '');
+}
+
+if (!localStorage.getItem('STORE_SYSTEM_USERNAME')) {
+    localStorage.setItem('STORE_SYSTEM_USERNAME', 'User');
+}
+
+
+// Lockscreen and UAC
 export const $systemLockScreen = (h2 = "", small = "", callback = null) => {
     const lockScreenFRAMEP = $system_services_createElement.layouts(
         "div",
@@ -46,14 +55,14 @@ export const $systemLockScreen = (h2 = "", small = "", callback = null) => {
     $system_services_createElement.layouts(
         "h2",
         {},
-        h2,  // Custom message for the prompt
+        h2,
         section
     );
 
     $system_services_createElement.layouts(
         "small",
         {},
-        small,  // Custom message for the prompt
+        small,  
         section
     );
 
