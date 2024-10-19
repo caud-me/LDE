@@ -1,5 +1,10 @@
 import { $system_services_createElement, $system_services_createIconButton } from "./system_services.js"; // Ensure correct case
 
+// default apps:
+localStorage.setItem('calendar.js', '');
+localStorage.setItem('krita.js', '');
+localStorage.setItem('settings.js', '');
+
 for (let i = 0; i < localStorage.length; i++) {
     let key = localStorage.key(i);
     let newAddress = "apps/" + key
