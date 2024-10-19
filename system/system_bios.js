@@ -9,7 +9,7 @@ document.body.innerHTML = `
         if (event.key === 'F1') {
             event.preventDefault();
             const $system_bootLoader = document.createElement("script");
-            $system_bootLoader.setAttribute("src", "system/system_bootLoader.js");
+            $system_bootLoader.setAttribute("src", "./system/system_bootLoader.js");
             $system_bootLoader.setAttribute("type", "module");
             document.body.appendChild($system_bootLoader);
             document.removeEventListener('keydown', handleKeydown);

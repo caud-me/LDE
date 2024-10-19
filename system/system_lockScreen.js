@@ -95,18 +95,18 @@ const lock = document.getElementById("id")
 if (!lock) {
     $systemLockScreen(localStorage.getItem("STORE_SYSTEM_USERNAME"), "Do not forget your password", function() {
         const $system_taskbar = document.createElement("script");
-        $system_taskbar.setAttribute("src", "system/system_taskbar.js");
+        $system_taskbar.setAttribute("src", "./system/system_taskbar.js");
         $system_taskbar.setAttribute("type", "module");
         $system_taskbar.id = "id"
         document.body.appendChild($system_taskbar);
     
         const $system_programs = document.createElement("script");
-        $system_programs.setAttribute("src", "system/system_programs.js");
+        $system_programs.setAttribute("src", "./system/system_programs.js");
         $system_programs.setAttribute("type", "module");
         document.body.appendChild($system_programs);
     
         const $system_windowManager = document.createElement("script");
-        $system_windowManager.setAttribute("src", "system/system_windowManager.js");
+        $system_windowManager.setAttribute("src", "./system/system_windowManager.js");
         $system_windowManager.setAttribute("type", "module");
         document.body.appendChild($system_windowManager);
     });
