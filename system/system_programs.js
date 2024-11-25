@@ -4,6 +4,8 @@ import { $system_services_createElement, $system_services_createIconButton } fro
 localStorage.setItem('calendar.js', '');
 localStorage.setItem('krita.js', '');
 localStorage.setItem('settings.js', '');
+localStorage.setItem('readme.js', '');
+localStorage.setItem('webcam.js', '');
 
 for (let i = 0; i < localStorage.length; i++) {
     let key = localStorage.key(i);

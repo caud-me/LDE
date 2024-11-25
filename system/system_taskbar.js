@@ -147,6 +147,19 @@ const superTB = $system_services_createElement.layouts(
             startMenu
         )
 
+
+        var alert = $system_services_createElement.layouts(
+            "div",
+            {className: "winAlerts"},
+            "",
+            startMenu)
+    
+            $system_services_createElement.layouts(
+                "p",
+                {},
+                "If no apps show up, please reload the page. this is due to a faulty boot loader process",
+                alert)
+
         $system_services_createElement.layouts(
             "small",
             {},

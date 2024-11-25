@@ -1,7 +1,7 @@
 document.body.innerHTML = `
     <div class="bootSession">
         <h1>LDE</h1>
-        <small>Press F1 to start LDE, F12 for BIOS settings</small>
+        <small>Press F1 to launch, F12 for BIOS</small>
     </div>
     `
 
