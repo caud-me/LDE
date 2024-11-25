@@ -8,7 +8,7 @@
     --outlines: #80808040;
     --globalSpacing: .5rem;
     --width: 2.5rem;
-    --defaultSize: 11px;
+    --defaultSize: 12px;
 
     --hoverState: #8080801a;
     --accentHoverState: #4c7c55;
@@ -62,10 +62,6 @@ html {
     font-family: "Segoe UI";
     font-size: var(--defaultSize);
 
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    user-select: none;
-
     overflow-y: hidden;
 }
 
@@ -76,6 +72,11 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: var(--defaultText);
+
+    
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 h1, h2, h3, h4, h5, h6, strong {
@@ -372,11 +373,11 @@ section.hidden {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--hoverState);
+    background-color: #80808080;
 }
 
 p.accentHover:hover {
-    background-color: var(--accentHoverState);
+    background-color: #80808080;
 }
 
 a.accentHover {
@@ -694,3 +695,20 @@ video {
     }
 }
 
+pre {
+    background-color: #00000080;
+    border-radius: var(--unisonBorderRadius);
+    line-height: 1.5rem;
+    font-family: 'Consolas', Courier, monospace;
+    padding: var(--globalSpacing);
+
+    
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    user-select: text;
+    animation: moveLeft 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.dummyContainer {
+    padding: var(--globalSpacing);
+}
