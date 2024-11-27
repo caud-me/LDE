@@ -1,2 +1,2 @@
 # LDE
-web based operating system (beta)
+Version A01
